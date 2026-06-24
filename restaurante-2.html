@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurante El Buen Sabor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .navbar {
+      background-color: #8B0000;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .seccion {
+      display: none;
+      padding: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .seccion.activa {
+      display: block;
+    }
+
+    h1 {
+      color: #8B0000;
+    }
+
+    h2 {
+      color: #8B0000;
+    }
+
+    .imagen-placeholder {
+      background-color: #ddd;
+      width: 250px;
+      height: 180px;
+      display: inline-block;
+      text-align: center;
+      line-height: 180px;
+      margin: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #a00000;
+    }
+
+    .galeria {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#" onclick="mostrar('inicio')">Inicio</a>
+    <a href="#" onclick="mostrar('nosotros')">¿Quiénes Somos?</a>
+    <a href="#" onclick="mostrar('contacto')">Contacto</a>
+  </div>
+
+  <!-- INICIO -->
+  <div id="inicio" class="seccion activa">
+    <h1>Bienvenido al Restaurante El Buen Sabor</h1>
+    <p>Somos un restaurante familiar con más de 20 años de experiencia ofreciendo los mejores platillos de la cocina mexicana tradicional.</p>
+    <p>Nuestro objetivo es brindarte una experiencia única con sabores auténticos y un ambiente cálido y familiar.</p>
+
+    <h2>Nuestro Menú</h2>
+    <table>
+      <tr>
+        <th>Platillo</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <td>Tacos de carne asada</td>
+        <td>3 tacos con carne asada, cebolla y cilantro</td>
+        <td>$85</td>
+      </tr>
+      <tr>
+        <td>Enchiladas verdes</td>
+        <td>3 enchiladas con salsa verde y crema</td>
+        <td>$95</td>
+      </tr>
+      <tr>
+        <td>Pozole rojo</td>
+        <td>Caldo de maíz con carne de cerdo y toppings</td>
+        <td>$110</td>
+      </tr>
+      <tr>
+        <td>Sopa de lima</td>
+        <td>Caldo de pollo con lima y tortilla frita</td>
+        <td>$75</td>
+      </tr>
+      <tr>
+        <td>Flan napolitano</td>
+        <td>Postre de huevo con cajeta</td>
+        <td>$45</td>
+      </tr>
+    </table>
+
+    <h2>Horarios</h2>
+    <ul>
+      <li>Lunes a Viernes: 1:00 pm - 10:00 pm</li>
+      <li>Sábado: 12:00 pm - 11:00 pm</li>
+      <li>Domingo: 12:00 pm - 9:00 pm</li>
+    </ul>
+
+    <h2>Ubicación</h2>
+    <p>Calle Morelos #45, Colonia Centro, Guadalajara, Jalisco.</p>
+  </div>
+
+  <!-- QUIENES SOMOS -->
+  <div id="nosotros" class="seccion">
+    <h1>¿Quiénes Somos?</h1>
+    <p>El Buen Sabor fue fundado en el año 2003 por la familia García. Comenzamos como un pequeño puesto de comida y con el tiempo crecimos hasta convertirnos en el restaurante que somos hoy.</p>
+    <p>Nuestros valores son la calidad, el servicio y el amor por la cocina mexicana. Cada platillo es preparado con ingredientes frescos y recetas familiares.</p>
+
+    <h2>Galería</h2>
+    <div class="galeria">
+      <div class="imagen-placeholder">🍽️ Nuestros platillos</div>
+      <div class="imagen-placeholder">🏠 Interior del restaurante</div>
+      <div class="imagen-placeholder">👨‍🍳 Nuestro chef</div>
+      <div class="imagen-placeholder">🌮 Tacos especiales</div>
+      <div class="imagen-placeholder">🎉 Eventos especiales</div>
+      <div class="imagen-placeholder">🌿 Ingredientes frescos</div>
+    </div>
+
+    <h2>Nuestro Equipo</h2>
+    <ul>
+      <li><b>Carlos García</b> - Chef y fundador</li>
+      <li><b>María García</b> - Encargada del servicio al cliente</li>
+      <li><b>José López</b> - Chef de repostería</li>
+      <li><b>Ana Martínez</b> - Mesera principal</li>
+    </ul>
+  </div>
+
+  <!-- CONTACTO -->
+  <div id="contacto" class="seccion">
+    <h1>Contacto</h1>
+    <p>¿Tienes alguna pregunta o quieres hacer una reservación? Llena el formulario y nos pondremos en contacto contigo.</p>
+
+    <label>Nombre:</label>
+    <input type="text" placeholder="Escribe tu nombre" id="nombre" />
+
+    <label>Correo electrónico:</label>
+    <input type="email" placeholder="Escribe tu correo" id="correo" />
+
+    <label>Teléfono:</label>
+    <input type="tel" placeholder="Escribe tu teléfono" id="telefono" />
+
+    <label>Número de personas:</label>
+    <select id="personas">
+      <option value="">Selecciona una opción</option>
+      <option>1 persona</option>
+      <option>2 personas</option>
+      <option>3 a 5 personas</option>
+      <option>Más de 5 personas</option>
+    </select>
+
+    <label>Fecha de visita:</label>
+    <input type="date" id="fecha" />
+
+    <label>Mensaje:</label>
+    <textarea rows="5" placeholder="Escribe tu mensaje aquí" id="mensaje"></textarea>
+
+    <button onclick="enviar()">Enviar</button>
+  </div>
+
+  <footer>
+    <p>© 2025 Restaurante El Buen Sabor | Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function mostrar(seccion) {
+      var secciones = document.querySelectorAll('.seccion');
+      for (var i = 0; i < secciones.length; i++) {
+        secciones[i].classList.remove('activa');
+      }
+      document.getElementById(seccion).classList.add('activa');
+    }
+
+    function enviar() {
+      var nombre = document.getElementById('nombre').value;
+      var correo = document.getElementById('correo').value;
+      if (nombre == '' || correo == '') {
+        alert('Por favor llena tu nombre y correo');
+      } else {
+        alert('Mensaje enviado, gracias ' + nombre + '!');
+      }
+    }
+  </script>
+
+</body>
+</html>
